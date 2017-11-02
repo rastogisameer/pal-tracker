@@ -61,7 +61,7 @@ jobs:
   - get: pal-tracker
   - get: pal-tracker-artifacts
     trigger: true
-    paused: [build]
+    passed: [build]
   - put: review-deployment
     params:
       manifest: pal-tracker/manifest-review.yml
@@ -73,7 +73,7 @@ jobs:
   plan: 
   - get: pal-tracker
   - get: pal-tracker-artifacts
-    paused: [deploy-review]
+    passed: [deploy-review]
   - put: production-deployment
     params:
       manifest: pal-tracker/manifest-production.yml
