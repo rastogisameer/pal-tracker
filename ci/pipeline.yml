@@ -33,12 +33,12 @@ resources:
 
 - name: production-deployment
   type: cf
-    source:
-      api: {{cf-api-url}}
-      username: {{cf-username}}
-      password: {{cf-password}}
-      organization: {{cf-org}}
-      space: production
+  source:
+    api: {{cf-api-url}}
+    username: {{cf-username}}
+    password: {{cf-password}}
+    organization: {{cf-org}}
+    space: production
  
 jobs:
 - name: build
