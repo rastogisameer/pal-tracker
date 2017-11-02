@@ -4,7 +4,7 @@ resources:
   source:
     uri: {{github-repository}}
     branch: master
-    private-key: {{github-private-key}}
+    private_key: {{github-private-key}}
 
 - name: deploy
   type: cf
