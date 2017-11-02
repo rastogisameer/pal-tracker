@@ -50,7 +50,7 @@ jobs:
   - task: build and test
     file: pal-tracker/ci/build.yml
   - put: pal-tracker-artifacts
-    paramns:
+    params:
       file: build-output/pal-tracker-*.jar
   - put: version
     params:
