@@ -4,3 +4,5 @@ applications:
   host: sr-pal-tracker-review
   services:
   - tracker_database
+  env:
+    SECURITY_FORCE_HTTPS: true
